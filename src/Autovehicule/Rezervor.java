@@ -2,29 +2,29 @@ package Autovehicule;
 
 public class Rezervor {
 
-    private int maxCap;
+    private int capacitateMaxima;
     private int nivelCurent;
 
     public Rezervor()
     {
-        this.maxCap = 40;
+        this.capacitateMaxima = 40;
         this.nivelCurent = 0;
     }
 
-    public Rezervor(int maxCap, int nivelCurent)
+    public Rezervor(int capacitateMaxima, int nivelCurent)
     {
         this.nivelCurent = nivelCurent;
-        this.maxCap = maxCap;
+        this.capacitateMaxima = capacitateMaxima;
     }
 
-    public void setMaxCap(int maxCap)
+    public void setCapacitateMaxima(int capacitateMaxima)
     {
-        this.maxCap = maxCap;
+        this.capacitateMaxima = capacitateMaxima;
     }
 
-    public int getMaxCap()
+    public int getcapacitateMaxima()
     {
-        return maxCap;
+        return capacitateMaxima;
     }
 
     public void setNivelCurent(int nivelCurent)
@@ -39,14 +39,14 @@ public class Rezervor {
 
     public void umplere(int litrii)
     {
-        if(nivelCurent + litrii <= maxCap)
+        if(nivelCurent + litrii <= capacitateMaxima)
         {
             nivelCurent += litrii;
         }
         else
         {
-            System.out.println("Rezervorul este suprasaturat cu " + (nivelCurent + litrii - maxCap));
-            nivelCurent = maxCap;
+            System.out.println("Rezervorul este suprasaturat cu " + (nivelCurent + litrii - capacitateMaxima));
+            nivelCurent = capacitateMaxima;
         }
     }
 

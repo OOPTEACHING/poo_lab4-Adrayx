@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Autovehicul {
 
-    private final int vitezaMaximaLimitata = 200;
+    private static final int VITEZA_MAXIMA_LIMITATA = 200;
     private String marca;
     private Color culoare;
     private int vitezaCurenta;
@@ -44,19 +44,19 @@ public class Autovehicul {
         }
     }
 
-    public void decelerare(int viteza){
-        if(vitezaCurenta - viteza < 0){
+    public void decelerare(int vitezaDorita){
+        if(vitezaCurenta - vitezaDorita <= 0){
             System.out.println("Vehiculul este oprit");
             vitezaCurenta = 0;
         }
         else
         {
-            vitezaCurenta -= viteza;
+            vitezaCurenta -= vitezaDorita;
         }
     }
 
-    public void schimbareTrepte(int fel){
-        if(fel == 0)
+    public void schimbareTrepte(int tipSchimbareTreapta){
+        if(tipSchimbareTreapta == 0)
         {
             if(treaptaCurenta == 1)
             {
@@ -150,13 +150,13 @@ public class Autovehicul {
     }
 
     public int getVitezaMaximaLimitata() {
-        return vitezaMaximaLimitata;
+        return VITEZA_MAXIMA_LIMITATA;
     }
 
     public void limitareElectronica()
     {
-        this.vitezaMaxima = vitezaMaximaLimitata;
-        System.out.println("Masina a fost limitata electronic la " + vitezaMaximaLimitata);
+        this.vitezaMaxima = VITEZA_MAXIMA_LIMITATA;
+        System.out.println("Masina a fost limitata electronic la " + VITEZA_MAXIMA_LIMITATA);
     }
 
     @Override

@@ -34,11 +34,40 @@ public class Station {
         }
         else
         {
-            emptySlotIndex--;
+            boolean ok = false;
+            for(int i = 0; i < emptySlotIndex; i++)
+                if(scooters[i].equals(scooter))
+                {
+                    for(int j = i; j < emptySlotIndex; j++)
+                    {
+                        scooters[j] = scooters[j + 1];
+                    }
+                    ok = true;
+                    break;
+                }
+            if(ok == true){
+                scooters[emptySlotIndex].setName("None");
+                scooters[emptySlotIndex].setColor("None");
+                scooters[emptySlotIndex].setId(0);
+                scooters[emptySlotIndex].setUser(new User());
+                emptySlotIndex--;
+            }
+            else
+            {
+                System.out.println("Scooter not found!");
+            }
+
         }
     }
 
     public void removeAllScooters(){
+        for(int i = emptySlotIndex; i >= 0; i--)
+        {
+            scooters[i].setName("None");
+            scooters[i].setColor("None");
+            scooters[i].setId(0);
+            scooters[i].setUser(new User());
+        }
         emptySlotIndex = 0;
     }
 }

@@ -2,15 +2,15 @@ package com.company;
 
 public class ShoppingCart {
 
-    private final int maxArticleCount = 6;
-    private int articleCount;
-    private String[] article = new String[maxArticleCount];
-    private int[] price = new int[maxArticleCount];
+    private static final int MAX_ARTICLES_COUNT = 6;
+    private int articlesCount;
+    private String[] article = new String[MAX_ARTICLES_COUNT];
+    private int[] price = new int[MAX_ARTICLES_COUNT];
     private int totalSum;
 
     public ShoppingCart()
     {
-        this.articleCount = 0;
+        this.articlesCount = 0;
         this.totalSum = 0;
     }
 
@@ -20,10 +20,10 @@ public class ShoppingCart {
     }
 
     public void showList() {
-        if (articleCount == 0)
+        if (articlesCount == 0)
             System.out.println("The shopping cart is empty ;-;");
         else {
-            for (int i = 0; i < articleCount; i++)
+            for (int i = 0; i < articlesCount; i++)
             {
                 System.out.println(article[i]+ " " + price[i]);
             }
@@ -33,33 +33,33 @@ public class ShoppingCart {
 
     public void addItem(String itemName, int price)
     {
-        if(articleCount == maxArticleCount)
+        if(articlesCount == MAX_ARTICLES_COUNT)
         {
             System.out.println("The cart is already full (* ^ ω ^)");
         }
         else {
-            this.article[articleCount] = itemName;
-            this.price[articleCount] = price;
+            this.article[articlesCount] = itemName;
+            this.price[articlesCount] = price;
             totalSum += price;
-            ++articleCount;
+            ++articlesCount;
         }
     }
 
     public void deleteItem(String itemName)
     {
-        if(articleCount == 0)
+        if(articlesCount == 0)
         {
             System.out.println("The cart is already empty enough >.<");
         }
         else
         {
             boolean ok = false;
-            for(int i = 0; i < articleCount && ok == false; i++)
+            for(int i = 0; i < articlesCount && ok == false; i++)
             {
                 if(article[i].equals(itemName))
                 {
                     totalSum -= price[i];
-                    for(int j = i; j < articleCount - 1; j++)
+                    for(int j = i; j < articlesCount - 1; j++)
                     {
                         article[j] = article[j + 1];
                         price[j] = price[j + 1];
@@ -77,7 +77,12 @@ public class ShoppingCart {
 
     public void emptyCart()
     {
+        for(int i = articlesCount - 1; i >= 0; i--)
+        {
+            price[i] = 0;
+            article[i] = "None";
+        }
         totalSum = 0;
-        articleCount = 0;
+        articlesCount = 0;
     }
 }

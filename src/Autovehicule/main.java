@@ -2,7 +2,7 @@ package Autovehicule;
 
 import java.awt.*;
 
-public class Main {
+public class main {
     public void main(String[] args)
     {
         Autovehicul autovehicul = new Autovehicul();
@@ -18,7 +18,7 @@ public class Main {
         sofer.setPermis("A1 B");
         sofer.toString();
 
-        rezervor.setMaxCap(55);
+        rezervor.setCapacitateMaxima(55);
         rezervor.setNivelCurent(30);
 
         autovehicul.setMarca("BMW");

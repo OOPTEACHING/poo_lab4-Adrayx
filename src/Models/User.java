@@ -6,6 +6,13 @@ public class User {
     private String name;
     private String phone;
 
+    public User()
+    {
+        this.id = 0;
+        this.name = "Unknown";
+        this.phone = "Unknown";
+    }
+
     public User(int id, String name, String phone){
         this.id = id;
         this.name = name;
