@@ -1,10 +1,8 @@
 package Autovehicule;
 
-import java.awt.*;
-
 public class Autovehicul {
 
-    private final int vitezaMaximaLimitata = 200;
+    private static final int vitezaMaximaLimitata = 200;
     private String marca;
     private Color culoare;
     private int vitezaCurenta;
@@ -45,7 +43,7 @@ public class Autovehicul {
     }
 
     public void decelerare(int viteza){
-        if(vitezaCurenta - viteza < 0){
+        if(vitezaCurenta - viteza <= 0){
             System.out.println("Vehiculul este oprit");
             vitezaCurenta = 0;
         }
