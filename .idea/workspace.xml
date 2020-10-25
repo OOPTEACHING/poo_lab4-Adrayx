@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5045070-66ee-419e-8515-0a98ebb3b43d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Autovehicule/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Autovehicule/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +86,7 @@
       <workItem from="1603207423944" duration="62000" />
       <workItem from="1603568168287" duration="6986000" />
       <workItem from="1603575207628" duration="48000" />
+      <workItem from="1603616592695" duration="1270000" />
     </task>
     <servers />
   </component>
@@ -111,10 +110,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="178" width="1092" height="717" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603568204205" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1603568708328">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1603616599184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603568708328" />
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603616599184" />
     <state width="1873" height="272" key="GridCell.Tab.0.bottom" timestamp="1603575159969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

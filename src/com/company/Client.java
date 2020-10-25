@@ -2,6 +2,7 @@ package com.company;
 
 public class Client {
 
+    //comment
     private String firstName;
     private String lastName;
     private ShoppingCart cart;

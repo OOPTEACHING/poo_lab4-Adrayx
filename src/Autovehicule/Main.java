@@ -16,6 +16,7 @@ public class Main {
         sofer.setPrenume("Andrei");
         sofer.setVarsta(20);
         sofer.setPermis("A1 B");
+        sofer.toString();
 
         rezervor.setMaxCap(55);
         rezervor.setNivelCurent(30);
