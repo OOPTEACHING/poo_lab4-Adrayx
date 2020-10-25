@@ -1,6 +1,6 @@
 package Models;
 
-public class main {
+public class Main {
     public static void main(String[] args){
         User user1 = new User(1, "Andrei", "0711111111");
         User user2 = new User(2, "Victor", "0722222222");

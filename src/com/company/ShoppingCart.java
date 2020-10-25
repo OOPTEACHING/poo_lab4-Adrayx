@@ -4,8 +4,8 @@ public class ShoppingCart {
 
     private static final int MAX_ARTICLES_COUNT = 6;
     private int articlesCount;
-    private String[] article = new String[MAX_ARTICLES_COUNT];
-    private int[] price = new int[MAX_ARTICLES_COUNT];
+    private String[] articles = new String[MAX_ARTICLES_COUNT];
+    private int[] prices = new int[MAX_ARTICLES_COUNT];
     private int totalSum;
 
     public ShoppingCart()
@@ -25,7 +25,7 @@ public class ShoppingCart {
         else {
             for (int i = 0; i < articlesCount; i++)
             {
-                System.out.println(article[i]+ " " + price[i]);
+                System.out.println(articles[i]+ " " + prices[i]);
             }
             System.out.println("Total price: " + totalSum);
         }
@@ -38,8 +38,8 @@ public class ShoppingCart {
             System.out.println("The cart is already full (* ^ ω ^)");
         }
         else {
-            this.article[articlesCount] = itemName;
-            this.price[articlesCount] = price;
+            this.articles[articlesCount] = itemName;
+            this.prices[articlesCount] = price;
             totalSum += price;
             ++articlesCount;
         }
@@ -56,13 +56,13 @@ public class ShoppingCart {
             boolean ok = false;
             for(int i = 0; i < articlesCount && ok == false; i++)
             {
-                if(article[i].equals(itemName))
+                if(articles[i].equals(itemName))
                 {
-                    totalSum -= price[i];
+                    totalSum -= prices[i];
                     for(int j = i; j < articlesCount - 1; j++)
                     {
-                        article[j] = article[j + 1];
-                        price[j] = price[j + 1];
+                        articles[j] = articles[j + 1];
+                        prices[j] = prices[j + 1];
                     }
                     System.out.println("Item pulverized ;)");
                     ok = true;
@@ -79,8 +79,8 @@ public class ShoppingCart {
     {
         for(int i = articlesCount - 1; i >= 0; i--)
         {
-            price[i] = 0;
-            article[i] = "None";
+            prices[i] = 0;
+            articles[i] = "None";
         }
         totalSum = 0;
         articlesCount = 0;

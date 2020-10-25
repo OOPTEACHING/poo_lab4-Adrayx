@@ -2,7 +2,7 @@ package Autovehicule;
 
 import java.awt.*;
 
-public class main {
+public class Main {
     public void main(String[] args)
     {
         Autovehicul autovehicul = new Autovehicul();
