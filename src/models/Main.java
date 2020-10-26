@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 public class Main {
     public static void main(String[] args){
@@ -8,5 +8,14 @@ public class Main {
         Scooter scooter1 = new Scooter(42, "Verde", "Lime", user1);
         Scooter scooter2 = new Scooter(32, "Portocaliu", "Bolt", user2);
 
+        Station station = new Station();
+        station.addScooter(scooter1);
+        station.addScooter(scooter2);
+
+        station.removeScooter(scooter1);
+
+        station.addScooter((scooter2));
+
+        station.removeAllScooters();
     }
 }

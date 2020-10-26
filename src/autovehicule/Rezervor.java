@@ -1,4 +1,4 @@
-package Autovehicule;
+package autovehicule;
 
 public class Rezervor {
 

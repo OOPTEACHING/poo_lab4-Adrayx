@@ -1,4 +1,4 @@
-package Autovehicule;
+package autovehicule;
 
 import java.awt.*;
 

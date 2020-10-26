@@ -65,6 +65,8 @@ public class ShoppingCart {
                         prices[j] = prices[j + 1];
                     }
                     System.out.println("Item pulverized ;)");
+                    prices[--articlesCount] = 0;
+                    articles[articlesCount] = null;
                     ok = true;
                 }
             }
@@ -80,7 +82,7 @@ public class ShoppingCart {
         for(int i = articlesCount - 1; i >= 0; i--)
         {
             prices[i] = 0;
-            articles[i] = "None";
+            articles[i] = null;
         }
         totalSum = 0;
         articlesCount = 0;

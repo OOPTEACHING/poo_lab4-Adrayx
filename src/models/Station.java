@@ -1,4 +1,4 @@
-package Models;
+package models;
 
 public class Station {
 
@@ -38,35 +38,29 @@ public class Station {
             for(int i = 0; i < emptySlotIndex; i++)
                 if(scooters[i].equals(scooter))
                 {
-                    for(int j = i; j < emptySlotIndex; j++)
+                    for(int j = i; j < emptySlotIndex - 1; j++)
                     {
                         scooters[j] = scooters[j + 1];
                     }
                     ok = true;
                     break;
                 }
-            if(ok == true){
-                scooters[emptySlotIndex].setName("None");
-                scooters[emptySlotIndex].setColor("None");
-                scooters[emptySlotIndex].setId(0);
-                scooters[emptySlotIndex].setUser(new User());
-                emptySlotIndex--;
+            if(ok != true)
+            {
+                System.out.println("Scooter not found!");
             }
             else
             {
-                System.out.println("Scooter not found!");
+                emptySlotIndex--;
             }
 
         }
     }
 
     public void removeAllScooters(){
-        for(int i = emptySlotIndex; i >= 0; i--)
+        for(int i = emptySlotIndex - 1; i >= 0; i--)
         {
-            scooters[i].setName("None");
-            scooters[i].setColor("None");
-            scooters[i].setId(0);
-            scooters[i].setUser(new User());
+            scooters[i] = null;
         }
         emptySlotIndex = 0;
     }
