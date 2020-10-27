@@ -21,15 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5045070-66ee-419e-8515-0a98ebb3b43d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autovehicule/Autovehicul.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/autovehicule/Autovehicul.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autovehicule/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/autovehicule/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autovehicule/Rezervor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/autovehicule/Rezervor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autovehicule/Sofer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/autovehicule/Sofer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Scooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Scooter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ShoppingCart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,17 +77,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -125,6 +105,8 @@
       <workItem from="1603668185847" duration="675000" />
       <workItem from="1603727664109" duration="979000" />
       <workItem from="1603740524646" duration="3045000" />
+      <workItem from="1603779194008" duration="222000" />
+      <workItem from="1603801803048" duration="302000" />
     </task>
     <servers />
   </component>
@@ -144,14 +126,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="793" y="240" key="#Menus_and_Toolbars" timestamp="1603801831135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="793" y="240" key="#Menus_and_Toolbars/0.0.1920.1040@0.0.1920.1040" timestamp="1603801831135" />
     <state x="828" y="178" width="1092" height="717" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603568204205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="178" width="1092" height="717" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603568204205" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1603650768974">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1603779418597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603650768974" />
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603779418597" />
     <state width="1873" height="336" key="GridCell.Tab.0.bottom" timestamp="1603743939611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,6 +170,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1873" height="336" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603743939611" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603802067094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603802067094" />
+    <state x="776" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603802044285">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603802044285" />
     <state x="551" y="118" key="new project wizard" timestamp="1603729374316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
